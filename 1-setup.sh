@@ -8,7 +8,7 @@
 #  ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝   ╚═╝    ╚═════╝ ╚══════╝
 #-------------------------------------------------------------------------
 echo "--------------------------------------"
-echo "--          Network Setup           --"
+echo "--          Webby Web Setup           --"
 echo "--------------------------------------"
 pacman -S networkmanager dhclient --noconfirm --needed
 systemctl enable --now NetworkManager
@@ -30,7 +30,7 @@ echo "Changing the compression settings for "$nc" cores."
 sudo sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T $nc -z -)/g' /etc/makepkg.conf
 fi
 echo "-------------------------------------------------"
-echo "       Setup Language to US and set locale       "
+echo "       Setup Language to SUS and set locale       "
 echo "-------------------------------------------------"
 sed -i 's/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
