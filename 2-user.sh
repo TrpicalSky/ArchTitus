@@ -62,5 +62,5 @@ konsave -i $HOME/ArchTitus/kde.knsv
 sleep 1
 konsave -a kde
 
-echo -e "\nDone!\n"
+echo -e "\nDoody Done Gamer!\n"
 exit
