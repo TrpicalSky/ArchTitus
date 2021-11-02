@@ -19,12 +19,12 @@ sed -i 's/^#Para/Para/' /etc/pacman.conf
 pacman -S --noconfirm reflector rsync grub
 mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
 echo -e "-------------------------------------------------------------------------"
-echo -e "   █████╗ ██████╗  ██████╗██╗  ██╗████████╗██╗████████╗██╗   ██╗███████╗"
-echo -e "  ██╔══██╗██╔══██╗██╔════╝██║  ██║╚══██╔══╝██║╚══██╔══╝██║   ██║██╔════╝"
-echo -e "  ███████║██████╔╝██║     ███████║   ██║   ██║   ██║   ██║   ██║███████╗"
-echo -e "  ██╔══██║██╔══██╗██║     ██╔══██║   ██║   ██║   ██║   ██║   ██║╚════██║"
-echo -e "  ██║  ██║██║  ██║╚██████╗██║  ██║   ██║   ██║   ██║   ╚██████╔╝███████║"
-echo -e "  ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝   ╚═╝    ╚═════╝ ╚══════╝"
+echo -e "   /╲/\╭༼ : ❛ ◡ ❛ : ༽╮/\╱﻿\"
+echo -e " /╲/\╭༼ : ❛ ◡ ❛ : ༽╮/\╱﻿\ "
+echo -e " /╲/\╭༼ : ❛ ◡ ❛ : ༽╮/\╱﻿\"
+echo -e "  /╲/\╭༼ : ❛ ◡ ❛ : ༽╮/\╱﻿\ "
+echo -e " /╲/\╭༼ : ❛ ◡ ❛ : ༽╮/\╱﻿\"
+echo -e "  /╲/\╭༼ : ❛ ◡ ❛ : ༽╮/\╱﻿\"
 echo -e "-------------------------------------------------------------------------"
 echo -e "-Setting up $iso mirrors for faster downloads"
 echo -e "-------------------------------------------------------------------------"
@@ -33,11 +33,11 @@ reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist
 mkdir /mnt
 
 
-echo -e "\nInstalling prereqs...\n$HR"
+echo -e "\nInstalling autism...\n$HR"
 pacman -S --noconfirm gptfdisk btrfs-progs
 
 echo "-------------------------------------------------"
-echo "-------select your disk to format----------------"
+echo "-------select your fortnite character to format----------------"
 echo "-------------------------------------------------"
 lsblk
 echo "Please enter disk to work on: (example /dev/sda)"
